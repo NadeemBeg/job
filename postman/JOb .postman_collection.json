@@ -1,0 +1,350 @@
+{
+	"info": {
+		"_postman_id": "b3833e8f-3c25-416f-8a43-483f0ed4bf70",
+		"name": "JOb ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "update Job Details",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "job",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "job",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Test",
+							"type": "default"
+						},
+						{
+							"key": "resume",
+							"type": "file",
+							"src": "/home/shoab/Desktop/PFIssueRegisterNumer.pdf"
+						},
+						{
+							"key": "profile",
+							"type": "file",
+							"src": "/home/shoab/Desktop/developer.jpg"
+						},
+						{
+							"key": "email",
+							"value": "tojak56483@serosin.com",
+							"type": "default"
+						},
+						{
+							"key": "technical_skill",
+							"value": "react js",
+							"type": "default"
+						},
+						{
+							"key": "mobile_number",
+							"value": "7896541233",
+							"type": "default"
+						},
+						{
+							"key": "birthdate",
+							"value": "1995/03/25",
+							"type": "default"
+						},
+						{
+							"key": "id",
+							"value": "62b6c867740ce86d304f801f",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3002/api/updateJobdetails",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"updateJobdetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create JOb",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "job",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "job",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "nadeem ",
+							"type": "default"
+						},
+						{
+							"key": "resume",
+							"value": null,
+							"type": "file"
+						},
+						{
+							"key": "profile",
+							"value": null,
+							"type": "file"
+						},
+						{
+							"key": "email",
+							"value": "tojak56483@serosin.com",
+							"type": "default"
+						},
+						{
+							"key": "technical_skill",
+							"value": "node js",
+							"type": "default"
+						},
+						{
+							"key": "mobile_number",
+							"value": "7896541230",
+							"type": "default"
+						},
+						{
+							"key": "birthdate",
+							"value": "21/03/1995",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3002/api/createAjob",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"createAjob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete many Jobs",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "job",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "job",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":[\"62b6c34789022377389ba05a\",\"62b6c867740ce86d304f801f\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/api/deleteJob",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"deleteJob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteOneJob",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "job",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "job",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"62b6c34789022377389ba05a\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/api/deleteOneJob",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"deleteOneJob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "searchJob",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "job",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "job",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/api/searchJob?name=react js",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"searchJob"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "react js"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findAllJob",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "job",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "job",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/api/findAllJob",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"findAllJob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOneJob",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"62b6c34789022377389ba05a\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/api/getOneJob",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"getOneJob"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
